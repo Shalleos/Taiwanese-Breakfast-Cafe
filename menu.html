@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device=wide, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="cafe_site_stylesheet.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+      $(function(){
+      $('.cafe_sidebar').load("cafe_sidebar.html"); 
+    });
+      $(function(){
+      $('.footer').load("footer.html"); 
+    });
+    </script> 
+    <style>
+
+      .menu{
+        display:flex;
+        gap: 5px;
+        justify-content: center; 
+        align-items: center; 
+    }
+      .menu img{
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        cursor: pointer;
+      }
+      .menu img:hover{
+        transform: scale(0.8);
+        filter: grayscale(100%);
+        border-radius: 20px;
+        box-shadow: 0 32px 7px rgba(68, 77, 136, 0.2);
+    }
+
+    </style>
+    <title>Menus</title>
+</head>
+
+<body>
+  <nav>
+    <div class="cafe_sidebar"></div>
+    <div class="content-container">
+      <div id="main">
+        <div class="logo_img"><img width="300" src="/images/Breakfast_Cafe/cafe_logo.png" title="logo" alt="logo">
+        <br>
+        <br>
+          <div class="full-img" id="fullImgBox">
+          <img src="/images/Breakfast_Cafe/coffee_1.jpg" id="fullImg">
+          <span onclick="closeFullImg()">X</span>
+          </div> 
+        <div class="content_background">
+          <div class="menu">
+            <div>
+              <img src="/images/Breakfast_Cafe/menu_page_1.jpg" onclick="openFullImg(this.src)">
+            </div>
+            <div>
+              <img src="/images/Breakfast_Cafe/menu_page_2.jpg" onclick="openFullImg(this.src)">
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  <script src="cafe_site_scriptsheet.js"></script>
+  </nav> 
+  <footer id="footer">
+    <div class="footer"></div>
+  </footer>
+</body>  
+<footer>
+</footer>
+</html>

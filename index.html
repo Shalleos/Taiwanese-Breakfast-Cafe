@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device=wide, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="cafe_site_stylesheet.css">
+
+    <title>Homepage</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+      $(function(){
+      $('.cafe_sidebar').load("cafe_sidebar.html"); 
+    });
+      $(function(){
+      $('.footer').load("footer.html"); 
+    });
+    </script>
+
+    <style>
+      p{
+        color: white;
+        font-size: 150%;
+      }
+    </style>
+</head>
+
+<body>
+  <nav>
+    <div class="cafe_sidebar"></div>
+    <div class="content-container">
+    <div id="main">
+    <div class="logo_img"><img width="300" src="/images/Breakfast_Cafe/cafe_logo.png" title="logo" alt="logo">
+    <br>
+    <br> 
+      <div class="nav_img">
+        <div class="column">
+          <a href="menu.html"><img style="width: 110%;" src="/images/Breakfast_Cafe/menus.jpg"></a>
+          <p>
+            Menus
+          </p>
+        </div>
+        <div class="column">
+          <a href="gallery.html"><img src="/images/Breakfast_Cafe/gallery.jpg"></a>
+          <p>
+            Gallery
+          </p>
+        </div>
+        <div class="column">
+          <a href="contact.html"><img style="width: 110%;" src="/images/Breakfast_Cafe/contact_us.jpg"></a>
+          <p>
+            Contact us
+          </p>
+        </div>
+      </div>
+  </div>
+</div>
+    
+  <script src="cafe_site_scriptsheet.js"></script>
+  </nav>
+
+</body>  
+<footer id="footer">
+  <div class="footer"></div>
+</footer>
+</html>

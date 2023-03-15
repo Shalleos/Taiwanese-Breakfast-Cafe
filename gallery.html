@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device=wide, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="cafe_site_stylesheet.css">
+    <title>Gallery</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+      $(function(){
+      $('.cafe_sidebar').load("cafe_sidebar.html"); 
+    });
+      $(function(){
+      $('.footer').load("footer.html"); 
+    });
+    </script> 
+</head>
+<body>
+    <div class="cafe_sidebar"></div>
+    <div class="content-container">
+      <div id="main">
+        
+        <div class="logo_img"><img width="300" src="/images/Breakfast_Cafe/cafe_logo.png" title="logo" alt="logo"></div>
+        <br>
+        <br>
+        <div class="full-img" id="fullImgBox">
+          <img src="/images/Breakfast_Cafe/coffee_1.jpg" id="fullImg">
+          <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="content_background">
+          <div class="img-gallery">
+              <img src="/images/Breakfast_Cafe/img_1.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_2.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_3.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_4.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_5.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_6.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_7.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_8.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_9.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_10.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_11.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_12.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_13.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_14.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_15.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_16.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_17.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_18.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_19.jpg" onclick="openFullImg(this.src)">
+              <img src="/images/Breakfast_Cafe/img_20.jpg" onclick="openFullImg(this.src)">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  <script src="cafe_site_scriptsheet.js"></script>
+
+  <footer id="footer">
+    <div class="footer"></div>
+  </footer>
+</body>
+
+</html>
